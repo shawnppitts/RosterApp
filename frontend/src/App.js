@@ -34,7 +34,6 @@ function App() {
       try {
         const backendUrl = process.env.REACT_APP_BACKEND_URL;
         const url = `http://${backendUrl}:8080/roster/${team}`
-        console.log(backendUrl)
         console.log(url)
         const response = await axios.get(url);
         setRoster(response);
