@@ -21,7 +21,6 @@ const teams = [
 ]
 
 function App() {
-
   const [team, setTeam] = useState(0)
   const [roster, setRoster] = useState(0)
   const [error, setError] = useState(0)
@@ -33,7 +32,10 @@ function App() {
   const fetchRoster = async () => {
     if (team !== 0){
       try {
-        const url = `http://127.0.0.1:8080/roster/${team}`
+        const backendUrl = process.env.REACT_APP_BACKEND_URL;
+        const url = `http://${backendUrl}:8080/roster/${team}`
+        console.log(backendUrl)
+        console.log(url)
         const response = await axios.get(url);
         setRoster(response);
       } catch (error) {
