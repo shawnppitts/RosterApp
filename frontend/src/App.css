@@ -37,3 +37,53 @@
     transform: rotate(360deg);
   }
 }
+
+.table{
+  text-align: center;
+}
+
+.dropdown{
+  width: 10%;
+}
+
+#loading{
+  padding-top: 20px;
+}
+
+#roster-btn{
+  background: rgb(0, 184, 148);
+  color: white;
+}
+
+#header{
+  background-color: #3D5AFE;
+}
+
+#fetch-cell{
+  width: 10%;
+}
+
+#stats-cell{
+  width: 70%;
+}
+
+.tcell{
+  color:black;
+}
+
+#fetch-btn{
+  background: rgb(178, 190, 195);
+}
+
+#table-body{
+  color: black;
+  background: rgb(223, 230, 233);
+}
+
+#table-body:hover{
+  color: black;
+}
+
+#table-row{
+  color: black;
+}
